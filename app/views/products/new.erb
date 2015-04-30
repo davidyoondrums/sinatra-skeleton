@@ -1,0 +1,58 @@
+<div class="row" style="padding 30px; background-color: #E1E1E1; padding: 10px; border-radius: 4px; margin: 5px auto 0">
+  <div class="large-12 columns">
+    <h1 class="docs-header">Product Registration Form</h1>
+    <h3>Please register your product!</h3>
+        <form action="/products" method="post">
+      
+          <div class="row">
+            <div class="large-4 columns">
+              <label>Name of the product</label>
+              <input type="text" name="name" placeholder="Invitation">
+            </div>
+          </div>
+            
+          <div class="row">
+                <div class="large-6 columns">
+                  <label>Explanation
+                    <textarea rows="10" name="explanation" placeholder="Prices for wedding invitations INCLUDE printing, response card, and white envelopes with your return address printed. All sets come completely assembled. (You will just be responsible for placing the inserts in the pockets, and stamping the envelopes)
+
+Optional upgrades available are maps, thermography/raised printing, cream envelopes, double envelopes, envelope liners and guest address printing.
+
+All invitations are customizable. You can choose from a variety of papers, ribbons, motifs and typestyles to suit the needs of your wedding.
+
+Alternate languages (i.e. Italian, Chinese, Greek, Hebrew, Spanish, Japanese, etc.) can be done."></textarea>
+                </label>
+              </div>
+            </div>
+          
+          <div class="row">
+            <div class="large-6 columns">
+              <label>Select Type of Product
+                  <select name="catagory">
+                    <option value="0">Wedding Stationaries</option>
+                    <option value="1">Brooch Accessories</option>
+                    <option value="2">Wedding Accesories</option>
+                    <option value="3">Party Invitations</option>
+                  </select>
+                </label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-6 columns">
+              <label>Paste the image URL</label>
+                <input name="image_url" type="text" placeholder="http://www.stephita.com/p_img/vintage/2013/new/717a.jpg">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-12 columns">
+              <input class="button small" type="submit" value="Submit">
+            </div>
+          </div>
+      </form>
+  </div>
+
+</div>
+
+    

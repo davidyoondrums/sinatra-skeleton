@@ -1,0 +1,59 @@
+
+ 
+      <div class="row" style="padding 30px; background-color: #E1E1E1; padding: 10px; border-radius: 4px; margin: 5px auto 0">
+        <div class="large-12 columns">
+          <h1 class="docs-header">We have successfully registered your product!</h1>
+              <div action="/products/edit" method="POST">
+            
+                <div class="row">
+                  <div class="large-6 columns">
+                    <label>Name of the Product</label>
+                      <div class="panel clearfix">
+                        <h5><%= @product.name %></h5>
+                      </div>
+                  </div>
+                </div>
+                  
+                <div class="row">
+                      <div class="large-8 columns">
+                        <label>explanation</label>
+                          <div class="panel clearfix">
+                            <%= @product.explanation %>
+                          </div>
+                        </div>
+                </div>
+
+                <div class="row">
+                      <div class="large-6 columns end">
+                        <label>Product Type</label>
+                          <div class="panel clearfix">
+                            <h5><%= num_to_catagory(@product.catagory) %></h5>
+                          </div>
+                      </div>
+                </div>
+                
+                <div class="row">
+                  <div class="large-3 small-6 columns">
+                    <img src="/images/<%= @product.image_url %>; 250x250&amp;text=Thumbnail">
+                      <h6 class="panel">Card id Number: <%= @product.id %></h6>
+                  </div>
+                </div>
+
+                
+
+                <div class="row">
+                  <div class="large-4 columns">
+                    <a href="/products/new" class="button small">Register More Product</a>
+                  </div>
+                  <div class="large-8 columns">
+                    <a href="/" class="button small">Main Page</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+
+    
