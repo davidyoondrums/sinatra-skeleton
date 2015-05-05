@@ -14,5 +14,5 @@ gem 'tux'
 group :development, :test do
   gem 'pry'
   gem 'shotgun'
-  gem 'sqlite3-ruby’, :require => ’sqlite3’
+  gem 'sqlite3'
 end
