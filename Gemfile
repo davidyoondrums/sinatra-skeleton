@@ -12,7 +12,6 @@ gem 'sinatra-activerecord'
 
 gem 'puma'
 gem 'tux'
-gem 'pg'
 
 group :production do
  gem 'pg' 
@@ -20,7 +19,6 @@ end
 
 group :development, :test do
   gem 'pry'
-  gem 'pg'
   gem 'shotgun'
   gem 'sqlite3'
 
